@@ -1,0 +1,26 @@
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    char op;
+    printf("enter two numbers:");
+    scanf("%d%d",&a,&b);
+    printf("enter a symbol:");
+    scanf(" %c",&op);
+    printf("enter a symbol:");
+    switch(op)
+    {
+        case'+': printf("the sum is:%d",a+b);
+                 break;
+        case'-': printf("the sub is:%d",a-b);
+                 break;
+        case'*': printf("the multiplication is:%d",a*b);
+                 break;
+        case'/': printf("the div is:%d",a/b);
+                 break;
+        case'%': printf("the mod div is:%d",a%b);
+                 break;
+        deafult: printf("wrong input");
+    }
+}
+    
