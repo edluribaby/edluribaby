@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include <conio.h>
+int result=0;
+int main()
+{
+    int p;
+    printf("enter the number\n");
+    scanf("%d",&p);
+    printf("the sumof digits is of %d is %d\n",p,sumofdigits(p));
+    return 0;
+}
+ int sumofdigits(int n)
+{
+    
+    while(n==0)
+    {
+        return result;
+    }
+     result=n%10+sumofdigits(n/10);
+     return result;
+}
+    
